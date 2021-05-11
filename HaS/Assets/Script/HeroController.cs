@@ -6,9 +6,11 @@ public class HeroController : MonoBehaviour
 {
     public float speed;
     Rigidbody _rigid;
+    [SerializeField] GameObject parentTransform;
     void Start()
     {
         _rigid = GetComponent<Rigidbody>();
+        _rigid.transform.position = parentTransform.transform.position;
     }
 
     void FixedUpdate()
@@ -23,4 +25,6 @@ public class HeroController : MonoBehaviour
 
         _rigid.velocity = new Vector3(moveX, 0, moveZ) * speed;
     }
+
+ 
 }

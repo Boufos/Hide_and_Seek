@@ -7,17 +7,24 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] Button[] buttonLvl;
-    LevelExit levelExit = new LevelExit();
 
+    private void Start()
+    {
+        SaveData.FinishLvl = SceneManager.sceneCount;
+    }
     public void onClik(int index)
     {
-        switch(index)
+        if(SaveData.FinishLvl< SaveData.currentLvl)
+        {
+            SceneManager.LoadScene("FinalScene");
+        }
+        switch (index)
         {
             case 1:
-                SceneManager.LoadScene(levelExit.currentLvl);
+                SceneManager.LoadScene(SaveData.currentLvl);
                 break;
             case 2:
-                SceneManager.LoadScene(levelExit.currentLvl+1);
+                SceneManager.LoadScene(SaveData.currentLvl+1);
                 break;
         }
 

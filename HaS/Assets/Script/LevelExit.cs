@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
-    public int currentLvl { get; private set; }
+   
     
     private void OnTriggerEnter(Collider other)
     {
-        currentLvl = SceneManager.GetActiveScene().buildIndex;
+        SaveData.currentLvl = SceneManager.GetActiveScene().buildIndex;
+        Debug.Log(SaveData.currentLvl);
         SceneManager.LoadScene("MenuNextLvl");
 
     }
