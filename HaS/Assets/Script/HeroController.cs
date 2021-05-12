@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HeroController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class HeroController : MonoBehaviour
     [SerializeField] GameObject parentTransform;
     void Start()
     {
+        SaveData.currentLvl = SceneManager.GetActiveScene().buildIndex;
         _rigid = GetComponent<Rigidbody>();
         _rigid.transform.position = parentTransform.transform.position;
     }

@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelExit : MonoBehaviour
+public class Laser : MonoBehaviour
 {
-   
-    
     private void OnTriggerEnter(Collider other)
     {
-        SaveData.currentLvl = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene("MenuNextLvl");
-
+        if (other.CompareTag("Player"))
+        {
+           
+            SceneManager.LoadScene("MenuLose");
+        }
     }
 }

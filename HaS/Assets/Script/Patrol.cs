@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Patrol : MonoBehaviour
 {
@@ -30,7 +31,8 @@ public class Patrol : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("POPAVCYA");
+            
+            SceneManager.LoadScene("MenuLose");
         }
     }
 

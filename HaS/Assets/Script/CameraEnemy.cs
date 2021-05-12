@@ -5,11 +5,22 @@ using UnityEngine;
 public class CameraEnemy : MonoBehaviour
 {
     public float time;
-    
-    void Update()
+    private bool sw =true;
+    [SerializeField] GameObject laser;
+
+    private void Start()
     {
-       
+        Invoke("CloseCamera", 2f);
+    }
+
+    void CloseCamera()
+    {
+        sw = !sw;
+        laser.SetActive(sw);
+        Invoke("CloseCamera", time);
     }
 
     
+
+
 }
