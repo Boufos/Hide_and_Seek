@@ -6,9 +6,15 @@ public class SpawnHero : MonoBehaviour
 {
 
     [SerializeField] GameObject spawnObject;
+    [SerializeField] ParticleSystem particle;
     void Start()
     {
         StartCoroutine(WaitStart());
+    }
+
+    private void Update()
+    {
+        particle.transform.position= spawnObject.transform.position;
     }
 
     IEnumerator WaitStart()
