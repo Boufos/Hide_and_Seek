@@ -713,6 +713,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &449491684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 80554126120877763, guid: 055e17afe3fedfc4dae5cec726633fb2, type: 3}
+  m_PrefabInstance: {fileID: 1406204317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &574270493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,6 +1915,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 170367509603607539, guid: 055e17afe3fedfc4dae5cec726633fb2, type: 3}
+      propertyPath: ExitAnimation
+      value: 
+      objectReference: {fileID: 449491684}
     - target: {fileID: 4780310523224478247, guid: 055e17afe3fedfc4dae5cec726633fb2, type: 3}
       propertyPath: m_Name
       value: Exit
