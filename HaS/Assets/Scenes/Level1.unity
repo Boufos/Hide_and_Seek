@@ -475,7 +475,7 @@ PrefabInstance:
     - target: {fileID: 2066896392029128874, guid: 45288819fde2143449a96207b14db0bb, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: ee3545f806735bf44a0f14d57132349b, type: 2}
+      objectReference: {fileID: 9100000, guid: b60dc9aa529b314489f628aa3b57c470, type: 2}
     - target: {fileID: 2066896392038131574, guid: 45288819fde2143449a96207b14db0bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -638,6 +638,11 @@ PrefabInstance:
     - {fileID: 1044517259730863844, guid: 887928f40af558247863c45beb3f6015, type: 3}
     - {fileID: 1044517259730863771, guid: 887928f40af558247863c45beb3f6015, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 887928f40af558247863c45beb3f6015, type: 3}
+--- !u!1 &309059982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5278930480591911363, guid: 7a75173a3d06e594c8ea5cf3c04628e8, type: 3}
+  m_PrefabInstance: {fileID: 5278930482019875650}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &385855359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,6 +1114,10 @@ PrefabInstance:
       propertyPath: time
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9052342298057937653, guid: 72332a445a772494ebb73a40a3bb1154, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad53d1a2f0e3a734288d7fca641e023e, type: 2}
     - target: {fileID: 9052342298057937655, guid: 72332a445a772494ebb73a40a3bb1154, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2774,7 +2783,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5278930480591911363, guid: 7a75173a3d06e594c8ea5cf3c04628e8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5278930480591911365, guid: 7a75173a3d06e594c8ea5cf3c04628e8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2792,6 +2801,10 @@ PrefabInstance:
       propertyPath: particle
       value: 
       objectReference: {fileID: 1074511187}
+    - target: {fileID: 5278930481148186842, guid: 7a75173a3d06e594c8ea5cf3c04628e8, type: 3}
+      propertyPath: spawnObject
+      value: 
+      objectReference: {fileID: 309059982}
     - target: {fileID: 5278930481148186843, guid: 7a75173a3d06e594c8ea5cf3c04628e8, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2984,6 +2997,10 @@ PrefabInstance:
       propertyPath: time
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9052342298057937653, guid: 72332a445a772494ebb73a40a3bb1154, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad53d1a2f0e3a734288d7fca641e023e, type: 2}
     - target: {fileID: 9052342298057937655, guid: 72332a445a772494ebb73a40a3bb1154, type: 3}
       propertyPath: m_RootOrder
       value: 13
